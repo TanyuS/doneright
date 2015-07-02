@@ -2,3 +2,51 @@
 	margin: 0;
 	padding: 0;
 }
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+.page {
+	color: #fff;
+	height: 100%;
+	min-height: 812px;
+	position: relative;
+	text-align: center;
+	width: 100%;
+}
+.page__top {
+	background-color: #00618d;
+	display: table;
+	height: 50%;
+	position: relative;
+	width: 100%;
+}
+.page-top__content,
+.page-bottom__content {
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+}
+
+#triangle-up {
+	bottom: 0;
+	background-color: #00618d;
+	border-left: 1000px solid transparent;
+	border-right: 3000px solid transparent;
+	border-bottom: 50px solid #027db4;
+	height: 0;
+	left: -39%;
+	position: absolute;
+	width: 0;
+}
+.page__bottom {
+	background-color: #027db4;
+	display: table;
+	height: 50%;
+	width: 100%;
+}
+
+.pic-wrapper__pic {
+	background: url("img/pic-slide1.jpg") no-repeat center center;
+}
