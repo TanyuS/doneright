@@ -10,7 +10,7 @@ html, body {
 .page {
 	color: #fff;
 	height: 100%;
-	min-height: 812px;
+	min-height: 650px;
 	position: relative;
 	text-align: center;
 	width: 100%;
@@ -19,6 +19,7 @@ html, body {
 	background-color: #00618d;
 	display: table;
 	height: 50%;
+	overflow: hidden;
 	position: relative;
 	width: 100%;
 }
@@ -36,9 +37,13 @@ html, body {
 	border-right: 3000px solid transparent;
 	border-bottom: 50px solid #027db4;
 	height: 0;
-	left: -39%;
+	left: 50%;
+	margin-left: -1450px;
 	position: absolute;
 	width: 0;
+}
+.pic-wrapper {
+	border: 10px solid #027db4;
 }
 .page__bottom {
 	background-color: #027db4;
