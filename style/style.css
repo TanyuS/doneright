@@ -43,7 +43,16 @@ html, body {
 	width: 0;
 }
 .pic-wrapper {
-	border: 10px solid #027db4;
+	border: 8px solid #027db4;
+    overflow: hidden;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -60px 0 0 -60px;
+    width: 120px;
+    height: 120px;
+    -webkit-backface-visibility: hidden;
+	transform: scaleX(1.5) rotate(45deg);
 }
 .page__bottom {
 	background-color: #027db4;
@@ -51,7 +60,16 @@ html, body {
 	height: 50%;
 	width: 100%;
 }
-
 .pic-wrapper__pic {
-	background: url("img/pic-slide1.jpg") no-repeat center center;
+    transform: rotate(-45deg) scaleX(0.667);
+    -webkit-backface-visibility: hidden;
+}
+.pic-wrapper__pic img {
+    display: block;
+	margin-left: -90%;
+	margin-top: -30%;
+	width: auto;
+}
+.bx-wrapper .pic-wrapper__pic img {
+	max-width: none;
 }

@@ -1,0 +1,9 @@
+.bx-wrapper .bx-viewport {
+	border: none;
+	box-shadow: none;
+	left: 0;
+}
+.bxslider,
+.bxslider li {
+	height: 100%;
+}
