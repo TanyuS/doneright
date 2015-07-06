@@ -227,7 +227,7 @@ html, body {
 		font-size: 18px;
 	}
 	.page-top__title span {
-		display: inline;
+		display: inline-block;
 		float: right;
 	}
 	.page-top__title_mobile {
