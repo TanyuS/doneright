@@ -11,60 +11,42 @@ html, body {
 /* font-family: "ProximaNovaRegular"; */
 @font-face {
     font-family: "ProximaNovaRegular";
-    src: url("../fonts/ProximaNovaRegular.eot");
-    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
-    url("../fonts/ProximaNova-Regular.otf") format("truetype");
+    src: url("../fonts/ProximaNova-Regular.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "ProximaNovaBold"; */
 @font-face {
     font-family: "ProximaNovaBold";
-    src: url("../fonts/ProximaNovaBold.otf");
-    src: url("../fonts/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaBold.woff") format("woff"),
-    url("../fonts/ProximaNova-Bold.otf") format("truetype");
+    src: url("../fonts/ProximaNova-Bold.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "ProximaNovaBlack"; */
 @font-face {
     font-family: "ProximaNovaLight";
-    src: url("../fonts/ProximaNovaBlack.eot");
-    src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaBlack.woff") format("woff"),
-    url("../fonts/ProximaNova-Light.otf") format("truetype");
+    src: url("../fonts/ProximaNova-Light.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "ProximaNovaSemiBoldIt"; */
 @font-face {
     font-family: "ProximaNovaSemiBoldIt";
-    src: url("../fonts/ProximaNovaBlack.eot");
-    src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaBlack.woff") format("woff"),
-    url("../fonts/ProximaNova-SemiboldItalic.otf") format("truetype");
+    src: url("../fonts/ProximaNova-SemiboldItalic.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "ProximaNovaSemiBold"; */
 @font-face {
     font-family: "ProximaNovaSemiBold";
-    src: url("../fonts/ProximaNovaBlack.eot");
-    src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaBlack.woff") format("woff"),
-    url("../fonts/ProximaNova-Semibold.otf") format("truetype");
+    src: url("../fonts/ProximaNova-Semibold.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
 /* font-family: "ProximaNovaBoldIt"; */
 @font-face {
     font-family: "ProximaNovaBoldIt";
-    src: url("../fonts/ProximaNovaBlack.eot");
-    src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
-    url("../fonts/ProximaNovaBlack.woff") format("woff"),
-    url("../fonts/ProximaNova-BoldIt.otf") format("truetype");
+    src: url("../fonts/ProximaNova-BoldIt.otf") format("truetype");
     font-style: normal;
     font-weight: normal;
 }
@@ -106,15 +88,15 @@ html, body {
 }
 .pic-wrapper {
 	border: 8px solid #027db4;
+    height: 120px;
+	left: 50%;
+	margin: 0 0 0 -60px;
     overflow: hidden;
 	position: absolute;
-	left: 50%;
-	top: -116px;
-	margin: 0 0 0 -60px;
-    width: 120px;
-    height: 120px;
-    -webkit-backface-visibility: hidden;
 	transform: scaleX(1.5) rotate(45deg);
+	top: -116px;
+    width: 120px;
+    -webkit-backface-visibility: hidden;
 }
 .page__bottom {
 	background-color: #027db4;
@@ -147,8 +129,8 @@ html, body {
 	width: 50px;
 }
 .page-bottom__cr {
-	position: relative;
 	display: block;
+	position: relative;
 	max-width: 765px;
 	margin: 0 auto;
 }
@@ -156,9 +138,9 @@ html, body {
 	background: url("../img/sprite.png") transparent no-repeat 0 -111px;
 	display: block;
 	height: 48px;
+	left: -35px;
 	position: absolute;
 	top: -52px;
-	left: -35px;
 	width: 45px;
 }
 .page-top-content__description {
@@ -167,8 +149,8 @@ html, body {
 }
 .page-bottom-cr__quote_right {
 	background-position: -45px -111px;
-	right: -41px;
 	left: auto;
+	right: -41px;
 	top: -46px;
 }
 .page-top__title {
@@ -234,15 +216,15 @@ html, body {
 	.page-top__title {
 		background-color: #008bca;
 		font-family: "ProximaNovaRegular";
+		font-size: 20px;
 		margin: -22px -22px 0 -22px;
 		padding: 15px 22px;
-		font-size: 20px;
 		text-transform: none;
 	}
 	.page-top__title h1 {
+		display: inline-block;
 		font-weight: normal;
 		font-size: 18px;
-		display: inline-block;
 	}
 	.page-top__title span {
 		display: inline;
@@ -264,9 +246,9 @@ html, body {
 		margin-top: 18px;
 	}
 	.page-top__text_smaller {
-		padding-top: 19px;
 		line-height: 19px;
 		margin-bottom: 31px;
+		padding-top: 19px;
 	}
 	.page-bottom-cr__more {
 		display: none;
@@ -287,8 +269,8 @@ html, body {
 	}
 	.page-bottom-cr__more-text p {
 		font-size: 15px;
-		margin-top: 19px;
 		line-height: 19px;
+		margin-top: 19px;
 	}
 	.page-bottom-cr__text {
 		font-family: "ProximaNovaBoldIt";
@@ -297,8 +279,8 @@ html, body {
 		font-family: "ProximaNovaBold";
 	}
 	#triangle-up {
-		bottom: -77px;
 		background-color: #027db4;
+		bottom: -77px;
 		border-top: 29px solid #00618d;
 		border-left: 0;
 		border-right: 0;
@@ -309,18 +291,18 @@ html, body {
 		width: 100%;
 	}
 	.page-bottom-cr__quote {
-		top: -63px;
 		left: -2px;
+		top: -63px;
 	}
 	.page-bottom-cr__quote_right {
-		top: -57px;
-		right: 0px;
 		left: auto;
+		right: 0px;
+		top: -57px;
 	}
 	.pic-wrapper {
+		height: 100px;
 		top: -105px;
 		width: 100px;
-		height: 100px;
 	}
 	.pic-wrapper__pic img {
 		margin-top: -21%;

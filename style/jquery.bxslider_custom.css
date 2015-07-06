@@ -13,13 +13,13 @@
 	width: 59px;	
 }
 .bx-wrapper .bx-prev {
-	left: 0;
 	background: url(../img/sprite.png) no-repeat 0 0;
+	left: 0;
 }
 
 .bx-wrapper .bx-next {
-	right: 0;
 	background: url(../img/sprite.png) no-repeat -59px 0;
+	right: 0;
 }
 
 .bx-wrapper .bx-prev:hover {
