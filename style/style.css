@@ -6,6 +6,67 @@
 html, body {
 	height: 100%;
 	width: 100%;
+	font-family: Verdana, sans-serif;
+}
+/* font-family: "ProximaNovaRegular"; */
+@font-face {
+    font-family: "ProximaNovaRegular";
+    src: url("../fonts/ProximaNovaRegular.eot");
+    src: url("../fonts/ProximaNovaRegular/ProximaNovaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaRegular/ProximaNovaRegular.woff") format("woff"),
+    url("../fonts/ProximaNova-Regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaBold"; */
+@font-face {
+    font-family: "ProximaNovaBold";
+    src: url("../fonts/ProximaNovaBold.otf");
+    src: url("../fonts/ProximaNovaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBold.woff") format("woff"),
+    url("../fonts/ProximaNova-Bold.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaBlack"; */
+@font-face {
+    font-family: "ProximaNovaLight";
+    src: url("../fonts/ProximaNovaBlack.eot");
+    src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBlack.woff") format("woff"),
+    url("../fonts/ProximaNova-Light.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaSemiBoldIt"; */
+@font-face {
+    font-family: "ProximaNovaSemiBoldIt";
+    src: url("../fonts/ProximaNovaBlack.eot");
+    src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBlack.woff") format("woff"),
+    url("../fonts/ProximaNova-SemiboldItalic.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaSemiBold"; */
+@font-face {
+    font-family: "ProximaNovaSemiBold";
+    src: url("../fonts/ProximaNovaBlack.eot");
+    src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBlack.woff") format("woff"),
+    url("../fonts/ProximaNova-Semibold.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "ProximaNovaBoldIt"; */
+@font-face {
+    font-family: "ProximaNovaBoldIt";
+    src: url("../fonts/ProximaNovaBlack.eot");
+    src: url("../fonts/ProximaNovaBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/ProximaNovaBlack.woff") format("woff"),
+    url("../fonts/ProximaNova-BoldIt.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
 }
 .page {
 	color: #fff;
@@ -15,6 +76,7 @@ html, body {
 	overflow: hidden;
 	text-align: center;
 	width: 100%;
+	min-width: 910px;
 }
 .page__top {
 	background-color: #00618d;
@@ -79,6 +141,7 @@ html, body {
 	cursor: pointer;
 	display: inline-block;
 	height: 32px;
+	margin: 32px 0;
 	outline: none;
 	position: relative;
 	width: 50px;
@@ -94,8 +157,8 @@ html, body {
 	display: block;
 	height: 48px;
 	position: absolute;
-	top: -50px;
-	left: 25px;
+	top: -52px;
+	left: -35px;
 	width: 45px;
 }
 .page-top-content__description {
@@ -104,21 +167,26 @@ html, body {
 }
 .page-bottom-cr__quote_right {
 	background-position: -45px -111px;
-	right: 25px;
+	right: -41px;
 	left: auto;
+	top: -46px;
 }
 .page-top__title {
-	font-family: Verdana, sans-serif;
-	font-size: 50px;
+	font-size: 33px;
+	font-family: "ProximaNovaBold";
 	text-transform: uppercase;
 }
 .page-top__text {
-	font-family: Verdana, sans-serif;
-	font-size: 18px;	
+	font-size: 18px;
+	font-family: "ProximaNovaLight";
 	margin: 15px 0;
+}
+.page-top__text_smaller {
+	padding-top: 30px;
 }
 .page-top__text_bigger {
 	font-size: 25px;
+	font-family: "ProximaNovaRegular";
 }
 .page-top__title span,
 .page-top__title_mobile {
@@ -127,24 +195,47 @@ html, body {
 .page-top-content__description {
 	margin-bottom: 65px;
 }
+.page-bottom-cr__more-text {
+	display: none;
+	font-family: 'ProximaNovaLight';
+}
+.page-bottom-cr__text {
+	font-size: 24px;
+    font-family: "ProximaNovaSemiBoldIt";
+    line-height: 28px;
+}
+.page-bottom-cr__person {
+	font-size: 15px;
+	font-family: "ProximaNovaRegular";
+}
+.page-bottom-cr-person__name {
+	font-family: "ProximaNovaSemiBold";
+}
 @media only screen and (max-width: 640px) {
 	.page {
 		text-align: left;
 		min-height: 100%;
 		height: auto;
+		min-width: 320px;
 	}
 	.page__top {
-		padding: 15px;
+		padding: 22px;
+		width: auto;
+	}
+	.page-top__text br {
+		display: none;
 	}
 	.page__bottom {
-		display: block;
-		padding: 50px 15px 15px 15px;
+		padding: 50px 22px 0;
 		min-height: 100%;
+		margin-top: 9px;
+		width: auto;
 	}
 	.page-top__title {
 		background-color: #008bca;
-		margin: -15px -15px 0 -15px;
-		padding: 15px;
+		font-family: "ProximaNovaRegular";
+		margin: -22px -22px 0 -22px;
+		padding: 15px 22px;
 		font-size: 20px;
 		text-transform: none;
 	}
@@ -157,25 +248,81 @@ html, body {
 		display: inline;
 		float: right;
 	}
-	.page__top {
-		width: auto;
-	}
 	.page-top__title_mobile {
 		display: block;
+		font-family: "ProximaNovaBold";
 		font-size: 21px;
-		margin-top: 15px;
+		margin-top: 50px;
 		text-transform: uppercase;
 	}
 	.page-top__text {
 		font-size: 15px;
 	}
 	.page-top__text_bigger {
-		font-size: 18px;
+		font-size: 20px;
+		font-family: "ProximaNovaLight";
+		margin-top: 18px;
+	}
+	.page-top__text_smaller {
+		padding-top: 19px;
+		line-height: 19px;
+		margin-bottom: 31px;
 	}
 	.page-bottom-cr__more {
 		display: none;
 	}
 	.page-bottom-cr__person {
-		margin: 15px 0;
+		font-size: 13px;
+		margin: 21px 0;
+	}
+	.page-bottom-cr-person__dashes {
+		display: none;
+	}
+	.page-bottom-cr__more-text {
+		display: block;
+	}
+	.page-bottom-cr__text {
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.page-bottom-cr__more-text p {
+		font-size: 15px;
+		margin-top: 19px;
+		line-height: 19px;
+	}
+	.page-bottom-cr__text {
+		font-family: "ProximaNovaBoldIt";
+	}
+	.page-bottom-cr-person__name {
+		font-family: "ProximaNovaBold";
+	}
+	#triangle-up {
+		bottom: -77px;
+		background-color: #027db4;
+		border-top: 29px solid #00618d;
+		border-left: 0;
+		border-right: 0;
+		border-bottom: 0;
+		height: 48px;
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+	}
+	.page-bottom-cr__quote {
+		top: -63px;
+		left: -2px;
+	}
+	.page-bottom-cr__quote_right {
+		top: -57px;
+		right: 0px;
+		left: auto;
+	}
+	.pic-wrapper {
+		top: -105px;
+		width: 100px;
+		height: 100px;
+	}
+	.pic-wrapper__pic img {
+		margin-top: -21%;
 	}
 }

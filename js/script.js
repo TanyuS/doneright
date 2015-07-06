@@ -1,8 +1,8 @@
 $(document).ready(function(){
-	$('.bxslider').bxSlider("adaptiveHeight: true");
+	$('.bxslider').bxSlider({adaptiveHeight: true,
+		adaptiveHeightSpeed: 0});
 
-
-	var canvas =  document.getElementById('diamond');
+/*	var canvas =  document.getElementById('diamond');
 	var context = canvas.getContext("2d"),
 		imageObj = new Image();
 	imageObj.src = "./img/pic-slide1.jpg";
@@ -23,5 +23,5 @@ $(document).ready(function(){
 		deleteCorner.moveTo(0,0);
 		deleteCorner.lineTo(130,0);
 		deleteCorner.lineTo(0,85);
-	};
+	};*/
 });

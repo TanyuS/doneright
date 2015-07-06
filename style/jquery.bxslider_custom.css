@@ -9,7 +9,7 @@
 }
 .bx-wrapper .bx-controls-direction a {
 	height: 79px;
-	top: 20%;
+	top: 26%;
 	width: 59px;	
 }
 .bx-wrapper .bx-prev {
@@ -38,7 +38,7 @@
 	overflow: visible !important;
 }
 .bx-wrapper .bx-pager {
-	bottom: 7px;
+	bottom: 21px;
 }
 .bx-wrapper .bx-pager.bx-default-pager a {
 	background-color: #00618d;
@@ -50,6 +50,30 @@
 @media only screen and (max-width: 640px) {
 	.bx-wrapper .bx-controls-direction a {
 		display: none;
+	}
+	.bx-wrapper,
+	.bx-wrapper .bx-viewport {
+		background-color: #027db4;
+		height: auto;
+	}
+	.bxslider li {
+		padding-bottom: 5px;
+	}
+	.bxslider li,
+	.bxslider ul {
+		background-color: #027db4;
+	}
+	.bx-wrapper .bx-pager {
+		bottom: 21px;
+		background-color: #027db4;
+		position: relative;
+	}
+	.bx-has-pager {
+		background-color: #027db4;
+	}
+	.bxslider,
+	.bxslider li {
+		height: auto;
 	}
 }
 
