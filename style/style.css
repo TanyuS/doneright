@@ -51,6 +51,7 @@ html, body {
     font-weight: normal;
 }
 .page {
+	background-color: #027db4;
 	color: #fff;
 	height: 100%;
 	min-height: 650px;
@@ -94,6 +95,7 @@ html, body {
     overflow: hidden;
 	position: absolute;
 	transform: scaleX(1.5) rotate(45deg);
+	-webkit-transform: scaleX(1.5) rotate(45deg);
 	top: -116px;
     width: 120px;
     -webkit-backface-visibility: hidden;
@@ -106,6 +108,7 @@ html, body {
 }
 .pic-wrapper__pic {
     transform: rotate(-45deg) scaleX(0.667);
+    -webkit-transform: rotate(-45deg) scaleX(0.667);
     -webkit-backface-visibility: hidden;
 }
 .pic-wrapper__pic img {

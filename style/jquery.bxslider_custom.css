@@ -82,3 +82,18 @@
 		height: 100% !important;
 	}
 }
+
+/* safari */
+@media all and (-webkit-min-device-pixel-ratio:0) {
+	::i-block-chrome, .pic-wrapper {
+		margin-bottom: -60px;
+		position: relative; 
+	}
+	::i-block-chrome, .bx-wrapper .bx-pager {
+		bottom: -30px; 
+		position: relative;
+	}
+	::i-block-chrome, .page {
+		min-height: 850px; 
+	}
+}
